@@ -1,0 +1,35 @@
+/* Custom CSS complementar a Tailwind CSS */
+
+/* Desplazamiento suave general */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animación cuando un campo no es válido */
+.invalid-shake {
+  animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+/* Personalización del scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a5b4fc;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #3730a3;
+}
